@@ -27,7 +27,9 @@ def load_colmap_data(realdir):
     
     w2c_mats = []
     bottom = np.array([0,0,0,1.]).reshape([1,4])
-    
+    for i in np.argsort(names):
+       print(names[i],end=' ')
+
     names = [imdata[k].name for k in imdata]
     print( 'Images #', len(names))
     perm = np.argsort(names)
