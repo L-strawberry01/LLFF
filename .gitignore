@@ -1,2 +1,3 @@
-*.ipynb_checkpoints*
-*.pyc
+parser.add_argument('--scenedir', type=str,
+default='D:/mass/colmap_work/',
+help='input scene directory')
